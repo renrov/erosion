@@ -27,9 +27,9 @@ function preload() {
       filename,
       img => {
         textures.push(img);
-        console.log(':white_tick: Cargada:', filename);
+        console.log('✅ Cargada:', filename);
       },
-      err => console.log(':x: No se pudo cargar:', filename)
+      err => console.log('❌ No se pudo cargar:', filename)
     );
   }
 }
@@ -42,7 +42,7 @@ function setup() {
   noStroke(); // No dibuja bordes para las formas.
   background(0); // Establece el fondo en negro.
   // Inicializa el botón de limpiar.
-  clearButton = createButton(':rubbish_bin: Limpiar');
+  clearButton = createButton('🗑️ Limpiar');
   clearButton.position(width - 85, 10); // Posiciona el botón.
   clearButton.size(75, 25); // Establece el tamaño del botón.
   clearButton.style('font-size', '12px'); // Aplica estilos CSS.
